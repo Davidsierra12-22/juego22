@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>juego de hacker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="cuerpo-sitio">
+
+    <div class="tarjeta" id="contenedor">
+        <h1 class="contenedor1">SISTEMA <span class="neon"> DE SEGURIDAD</span></h1>
+        
+        <div class="cronometro">TIEMPO: <span id="segundos">40</span>s</div>
+
+        <p>Adivina el código (1 al 100)</p>
+        
+        <input type="number" id="entrada" placeholder="00" min="1" max="100">
+        <button id="boton-probar">HACKEAR</button>
+
+        <h2 id="feedback">Inicia el escaneo...</h2>
+
+        <div class="memoria">
+            <strong>HISTORIAL:</strong>
+            <p id="intentos-vistos">---</p>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+    <style>
+        body {
+            background-image: url('imagen/imagen.png');
+            background-size: cover;      
+            background-position: center;  
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+    </style>
+</body>
+
+</html>
